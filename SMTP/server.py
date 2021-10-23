@@ -65,7 +65,7 @@ class Server(smtpd.SMTPServer):
             }
         })
 
-        logging.info("Received data from %s" % (data["from"]))
+        logging.info("Received data from %s" % (temp_data["from"]))
 
 def run(host = "0.0.0.0", port = 25):
     server = Server((host, port), None)
