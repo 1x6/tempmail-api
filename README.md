@@ -34,11 +34,11 @@
 ### Setup
 * Firstly create a mongodb account, and proceed to create a new project.
 * Now create a new database.
-<img src="https://cdn.discordapp.com/attachments/901454647917694986/901454657812049990/unknown.png">
+* <img src="https://cdn.discordapp.com/attachments/901454647917694986/901454657812049990/unknown.png">
 * Now goto the database overview and goto the collections tab.
-<img src="https://cdn.discordapp.com/attachments/901454647917694986/901454911882035201/unknown.png">
+* <img src="https://cdn.discordapp.com/attachments/901454647917694986/901454911882035201/unknown.png">
 * Now create a new database / collection.
-<img src="https://cdn.discordapp.com/attachments/901454647917694986/901455049618751498/unknown.png">
+* <img src="https://cdn.discordapp.com/attachments/901454647917694986/901455049618751498/unknown.png">
 * Now edit the following files and put your connection url inside.
 ```
 API/database.py
